@@ -9,7 +9,7 @@
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
     "svgSpriteM": "gulp svgSpriteM",
-    "deploy": "gulp deployGitHub --build"
+    "deploy": "gulp deployGitHub "
   },
   "author": "OlekLytvynenko",
   "license": "ISC",
@@ -52,5 +52,8 @@
     "util": "^0.12.5",
     "webp-converter": "2.2.3",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "gift": "^0.10.2"
   }
 }
