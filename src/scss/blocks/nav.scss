@@ -1,0 +1,21 @@
+.nav {
+  height: 100%;
+
+  color: #24282b;
+  @extend %fontNotoSerif;
+  @include font(16px, 32px, 400);
+
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+    height: 100%;
+  }
+
+  &__link {
+    height: 100%;
+    position: relative;
+  }
+}

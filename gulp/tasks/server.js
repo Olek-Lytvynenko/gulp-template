@@ -1,10 +1,9 @@
 // eslint-disable-next-line no-unused-vars
+const proxy = "gulp.test.com";
 export const server = (done) => {
   app.plugins.browsersync.init({
-    server: {
-      baseDir: `${app.path.build.html}`,
-    },
-    notify: true,
-    port: 5500,
+    injectChanges: false,
+    proxy: proxy,
+    notify: false,
   });
 };

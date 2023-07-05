@@ -1,6 +1,6 @@
-body {
-  background-color: #116fe0;
-  font-style: normal;
-  font-size: 56px;
-  font-family: 'Popins';
-}
+@import "reset";
+@import "./fonts";
+@import "./utils/_mixins";
+@import "./utils/extends";
+@import "./blocks";
+@import "./blocks/nav";

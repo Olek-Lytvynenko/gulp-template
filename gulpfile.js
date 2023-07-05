@@ -21,6 +21,7 @@ import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { svgSpriteM } from "./gulp/tasks/svgSpriteM.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { gitHubPage } from "./gulp/tasks/gitHubPage.js";
+import { translate } from "./gulp/tasks/addTranslate.js";
 
 function watcher() {
   gulp.watch(path.watch.files, copy);
@@ -54,3 +55,4 @@ export { deployZIP };
 export { deployGitHub };
 
 gulp.task("default", dev);
+gulp.task("translate", translate);

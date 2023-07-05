@@ -3,6 +3,7 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = "./dist";
 const srcFolder = "./src";
+const viewsFolder = "./views";
 
 export const path = {
   build: {
@@ -12,6 +13,7 @@ export const path = {
     html: `${buildFolder}/`,
     fonts: `${buildFolder}/fonts/`,
     files: `${buildFolder}/files/`,
+    views: `${buildFolder}/views/`,
   },
   src: {
     js: `${srcFolder}/js/app.js`,
@@ -29,6 +31,7 @@ export const path = {
     html: `${srcFolder}/**/*.html`,
     files: `${srcFolder}/files/**/*.*`,
   },
+  views: viewsFolder,
   clean: buildFolder,
   buildFolder: buildFolder,
   srcFolder: srcFolder,

@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 182px;
+
+  width: 173px;
+  height: 57px;
+  
+  color: #E2E001;
+  background-color: #24282B;
+  border-radius: 2px;
+
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: #fff;
+    border: 1px solid #72d4b4 ;
+    color: #24282B;
+  }
+
+  &:active {
+    border: 1px solid #C7C9C6 ;
+  }
+
+  @extend %fontNotoSerif;
+
+  @include font(16px, 32px, 300);
+}

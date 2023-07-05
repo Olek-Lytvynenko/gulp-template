@@ -1,0 +1,46 @@
+.menu {
+  background-color: #e2e001;
+  overflow-y: auto;
+  height: 100%;
+
+  &__content {
+    padding: 78px 0 138px;
+  }
+
+  &__top-action {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__icon {
+    @include square(27px);
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 58px;
+    margin-bottom: 216px;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+    color: #24282b;
+
+    @extend %fontNotoSerif;
+    @include font(16px, 32px, 400);
+  }
+  
+  @include onSmallDesktop {
+    display: none;
+  }
+}
