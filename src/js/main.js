@@ -12,6 +12,6 @@ window.addEventListener("hashchange", () => {
     document.body.style.overflow = "hidden";
   } else {
     document.body.classList.remove("page__body--with-menu");
-    document.body.style.overflow = "unset"
+    document.body.style.overflow = "unset";
   }
 });
