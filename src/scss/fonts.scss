@@ -13,6 +13,34 @@
 	font-style: normal;
 }
 @font-face{
+	font-family: MabryPro;
+	font-display: swap;
+	src: url("../fonts/MabryPro-Regular.woff2") format("woff2"), url("../fonts/MabryPro-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: NotoSerif;
+	font-display: swap;
+	src: url("../fonts/NotoSerif-ExtraBold.woff2") format("woff2"), url("../fonts/NotoSerif-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face{
+	font-family: NotoSerif;
+	font-display: swap;
+	src: url("../fonts/NotoSerif-Black.woff2") format("woff2"), url("../fonts/NotoSerif-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face{
+	font-family: NotoSerif;
+	font-display: swap;
+	src: url("../fonts/NotoSerif-Bold.woff2") format("woff2"), url("../fonts/NotoSerif-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
 	font-family: NotoSerif;
 	font-display: swap;
 	src: url("../fonts/NotoSerif-Light.woff2") format("woff2"), url("../fonts/NotoSerif-Light.woff") format("woff");
@@ -20,9 +48,37 @@
 	font-style: normal;
 }
 @font-face{
-	font-family: MabryPro;
+	font-family: NotoSerif;
 	font-display: swap;
-	src: url("../fonts/MabryPro-Regular.woff2") format("woff2"), url("../fonts/MabryPro-Regular.woff") format("woff");
+	src: url("../fonts/NotoSerif-Italic.woff2") format("woff2"), url("../fonts/NotoSerif-Italic.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: NotoSerif;
+	font-display: swap;
+	src: url("../fonts/NotoSerif-SemiBold.woff2") format("woff2"), url("../fonts/NotoSerif-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face{
+	font-family: NotoSerif;
+	font-display: swap;
+	src: url("../fonts/NotoSerif-Thin.woff2") format("woff2"), url("../fonts/NotoSerif-Thin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face{
+	font-family: NotoSerif;
+	font-display: swap;
+	src: url("../fonts/NotoSerif-Medium.woff2") format("woff2"), url("../fonts/NotoSerif-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face{
+	font-family: NotoSerif;
+	font-display: swap;
+	src: url("../fonts/NotoSerif-Regular.woff2") format("woff2"), url("../fonts/NotoSerif-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }

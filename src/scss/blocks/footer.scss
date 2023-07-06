@@ -1,0 +1,52 @@
+.footer {
+  background-color: $c-dark;
+
+  &__content {
+    display: flex;
+    gap: 16px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__location {
+    img {
+      height: 120px;
+      width: 110px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 102px;
+        height: 112px;
+
+        position: absolute;
+        background: url('../../img/footer-ellipse.svg');
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    padding: 27px;
+    color: $c-white;
+
+    @extend %fontNotoSerif;
+    @include font(12px, 24px, 300);
+  }
+
+  &__contact-info {
+    margin-bottom: 16px;
+
+  }
+
+  &__contact-social {
+    display: flex;
+    gap: 52px;
+
+    img {
+      width: 20px;
+    }
+  }
+}

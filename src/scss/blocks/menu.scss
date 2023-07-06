@@ -2,13 +2,14 @@
   background-color: #e2e001;
   overflow-y: auto;
   height: 100%;
+  overflow: hidden;
 
   &__content {
-    padding: 78px 0 138px;
+    padding: 92px 0 138px;
   }
 
   &__top-action {
-    margin-bottom: 0px;
+    margin-bottom: 88px;
     display: flex;
     justify-content: flex-end;
   }
@@ -23,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     gap: 58px;
-    margin-bottom: 216px;
+    margin-bottom: 95px;
   }
 
   &__link {
@@ -34,13 +35,17 @@
   &__action {
     display: flex;
     justify-content: center;
-    color: #24282b;
+    color: $c-dark;
 
     @extend %fontNotoSerif;
     @include font(16px, 32px, 400);
   }
+
+  @include onTablet {
+    opacity: 0.94;
+  }
   
-  @include onSmallDesktop {
+  @include onDesktop {
     display: none;
   }
 }

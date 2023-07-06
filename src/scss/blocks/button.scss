@@ -2,29 +2,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin-bottom: 182px;
+  margin-bottom: 188px;
 
   width: 173px;
   height: 57px;
-  
-  color: #E2E001;
-  background-color: #24282B;
+
+  color: $c-main;
+  background-color: $c-dark;
   border-radius: 2px;
 
   transition: background-color 300ms;
 
   &:hover {
     background-color: #fff;
-    border: 1px solid #72d4b4 ;
-    color: #24282B;
+    border: 1px solid $c-dark;
+    color: $c-dark;
   }
 
   &:active {
-    border: 1px solid #C7C9C6 ;
+    border: 1px solid $c-gray;
   }
 
   @extend %fontNotoSerif;
+  @include font(16px, 32px, 400);
 
-  @include font(16px, 32px, 300);
+  @include onDesign {
+    width: 275px;
+    margin-bottom: 0;
+  }
+
+  @include onDesign {
+    width: 275px;
+  }
 }

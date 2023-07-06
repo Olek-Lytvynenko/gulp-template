@@ -53,6 +53,7 @@ export { dev };
 export { build };
 export { deployZIP };
 export { deployGitHub };
+export { fonts };
 
 gulp.task("default", dev);
 gulp.task("translate", translate);

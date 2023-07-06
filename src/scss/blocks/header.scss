@@ -1,78 +1,51 @@
 .header {
-  height: 150px;
   margin: 0 auto;
-  // background-color: #e2e001;
+  background-color: #e2e001;
   position: relative;
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 0;
+    padding: 92px 0 50px ;
+
+    @include onDesktop {
+      padding: 52px 0 0;
+    }
+    @include onDesign {
+      padding: 75px 0 0;
+    }
   }
 
   &__top-action {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__icon--logo {
-    display: flex;
-    align-items: center;
-    width: 122px;
+    display: none;
+
+  @include onDesktop {
+    display: block;
+  }
   }
 
   &__icon--menu {
-    margin-left: 16px;
-    width: 58px;
-    height: 31px;
+    width: 52px;
+    height: 100%;
 
-    @include onTablet {
-      margin-left: 40px;
-    }
-
-    @include onSmallDesktop {
+    @include onDesktop {
       display: none;
     }
-  }
+   }
 
   &__nav {
     &--display {
       display: none;
-
-      @include onSmallDesktop {
-        display:flex;
-        flex-direction: row;
+      @include onDesktop {
+        display: flex;
       }
     }
-  }
-
-  &__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__title {
-    margin-bottom: 8px;
-    text-align: center;
-    margin-right: -32px;
-
-    @extend %fontMabryPro;
-    @include font(40px, 120px, 900, 32px);
-    @include onTablet {
-      @include font(96px, 120px, 900, 58px);
-      margin-right: -58px;
-    }
-  }
-
-  &__subtitle {
-    max-width: 358px;
-    margin-bottom: 36px;
-    margin-right: -15px;
-
-    @extend %fontMabryPro;
-    @include font(24px, 32px, 500, 15px);
   }
 }

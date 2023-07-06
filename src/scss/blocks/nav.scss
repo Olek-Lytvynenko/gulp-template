@@ -1,17 +1,26 @@
 .nav {
   height: 100%;
+  color: $c-dark;
 
-  color: #24282b;
   @extend %fontNotoSerif;
-  @include font(16px, 32px, 400);
+  @include font(16px, 32px, 300);
 
   &__list {
     display: flex;
     gap: 10px;
+
+    @include onDesktop {
+      gap: 105px;
+    }
+
+    @include onDesign {
+      gap: 145px;
+    }
   }
 
   &__item {
     height: 100%;
+    text-transform: capitalize;
   }
 
   &__link {

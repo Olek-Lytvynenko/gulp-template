@@ -1,0 +1,315 @@
+.welcome {
+  background-color: $c-main;
+  padding: 50px 0 125px;
+
+  @include onTablet {
+    padding: 122px 0 350px;
+  }
+
+  @include onDesktop {
+    padding: 205px 0 190px;
+  }
+
+  @include onDesign {
+    padding: 160px 0 260px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    text-align: center;
+    margin-right: -32px;
+
+    @extend %fontMabryPro;
+    @include font(40px, 120px, 900, 32px);
+
+    @include onTablet {
+      @include font(96px, 120px, 500, 58px);
+      margin-right: -58px;
+      margin-bottom: 60px;
+    }
+
+    @include onDesktop {
+      @include font(140px, 140px, 900, 120px);
+      margin-right: -120px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 358px;
+    margin-bottom: 52px;
+    margin-right: -5px;
+    text-align: center;
+
+    @extend %fontMabryPro;
+    @include font(20px, 32px, 500, 5px);
+
+    @include onTablet {
+      margin-bottom: 60px;
+      margin-right: -29px;
+      @include font(24px, 32px, 500, 29px);
+    }
+
+    @include onDesktop {
+      margin-bottom: 40px;
+
+    }
+  }
+
+  &__logo-wrapper {
+    width: 122px;
+    height: 60px;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+}
+
+.training {
+  padding: 64px 0 32px;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 67px;
+
+    @extend %fontMabryPro;
+    @include font(20px, 32px, 500, 5px);
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__card-image-wrapper {
+    width: 234px;
+    height: 243px;
+
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__card-title {
+    margin-bottom: 24px;
+    width: 100%;
+
+    h3 {
+      text-transform: uppercase;
+      text-align: left;
+
+      @extend %fontMabryPro;
+      @include font(20px, 32px, 500, 1.5px);
+    }
+  }
+
+  &__card-description {
+    text-align: left;
+    margin-bottom: 28px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @extend %fontNotoSerif;
+    @include font(16px, 28px, 300);
+  }
+}
+
+.schedule {
+  display: flex;
+  padding: 32px 0;
+  &__title {
+    margin-bottom: 48px;
+    text-align: center;
+
+    @extend %fontMabryPro;
+    @include font(20px, 32px, 500, 5px);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  &__item {
+    display: flex;
+    max-height: 100px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 56px;
+
+    p {
+      @extend %fontNotoSerif;
+      @include font(16px, 32px, 300);
+    }
+  }
+}
+
+.subscription {
+  padding: 0 0 64px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+
+    @extend %fontMabryPro;
+    @include font(20px, 32px, 500, 5px);
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    height: 112px;
+
+    background-color: $c-white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+
+    &--1 {
+      background-image: url("../../img/subscription-ellipse-1.svg");
+    }
+    &--2 {
+      background-image: url("../../img/subscription-ellipse-2.svg");
+    }
+    &--3 {
+      background-image: url("../../img/subscription-ellipse-3.svg");
+    }
+    &--4 {
+      background-image: url("../../img/subscription-ellipse-4.svg");
+    }
+    &--5 {
+      background-image: url("../../img/subscription-ellipse-5.svg");
+    }
+    &--6 {
+      background-image: url("../../img/subscription-ellipse-6.svg");
+    }
+  }
+
+  &__card-name {
+    width: 49%;
+    padding: 24px 50px 24px 24px;
+    @extend %fontNotoSerif;
+
+    h3 {
+      @include font(16px, 32px, 400);
+    }
+
+    span {
+      @include font(10px, 24px, 300);
+    }
+  }
+
+  &__card-info {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__card-price {
+    padding: 24px 0 12px;
+
+    @extend %fontMabryPro;
+    @include font(20px, 32px, 400);
+  }
+
+  &__card-button {
+    padding: 2px 58px;
+    background-color: $c-main;
+    margin-bottom: 10px;
+
+    @extend %fontNotoSerif;
+    @include font(16px, 32px, 400);
+  }
+}
+
+.contact-us {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background-color: $c-white;
+    padding: 13px 5px 24px 9px ;
+
+    p {
+      text-align: center;
+      margin-bottom: 24px;
+
+      @extend %fontNotoSerif;
+      @include font(10px, 24px, 300);
+
+    }
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+    
+
+    @extend %fontMabryPro;
+    @include font(20px, 32px, 500, 1.5px);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid $c-main;
+    padding: 0 0 5px 10px;
+    margin-bottom: 24px;
+
+    &:nth-child(5) {
+      margin-bottom: 8px;
+    }
+
+    &::placeholder {
+      @extend %fontNotoSerif;
+      @include font(14px, 32px, 300);
+      color: $c-dark;
+    }
+  }
+
+  &__submit {
+    background-color: $c-main;
+    border: 1px solid $c-main;
+    text-align: center;
+    padding: 8px 24px;
+    margin: 0 24px;
+
+    @extend %fontNotoSerif;
+    @include font(16px, 21px, 400);
+  }
+}

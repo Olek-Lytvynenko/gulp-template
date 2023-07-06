@@ -1,6 +1,7 @@
-@import "reset";
+@import "./reset";
+@import "./variables";
+
 @import "./fonts";
 @import "./utils/_mixins";
 @import "./utils/extends";
 @import "./blocks";
-@import "./blocks/nav";
