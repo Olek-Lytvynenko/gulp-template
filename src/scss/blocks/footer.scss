@@ -32,7 +32,7 @@
     padding: 27px;
     color: $c-white;
 
-    @extend %fontNotoSerif;
+    @extend %fontMontserrat;
     @include font(12px, 24px, 300);
   }
 

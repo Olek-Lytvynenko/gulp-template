@@ -2,25 +2,39 @@
   height: 100%;
   color: $c-dark;
 
-  @extend %fontNotoSerif;
-  @include font(16px, 32px, 300);
+  @extend %fontMontserrat;
+  @include font(22px, 32px, 500);
 
   &__list {
     display: flex;
-    gap: 10px;
-
-    @include onDesktop {
-      gap: 105px;
-    }
-
-    @include onDesign {
-      gap: 145px;
-    }
+    gap: 20px;
   }
 
   &__item {
     height: 100%;
     text-transform: capitalize;
+    position: relative;
+
+    &:not(:last-child)::before {
+      content: "|";
+      position: absolute;
+      top: 0;
+      right: -15px;
+      color: #000;
+      opacity: 0.2;
+    }
+
+    &:hover {
+      &::after {
+        content: "__";
+        position: absolute;
+        height: 1px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: transparent;
+      }
+    }
   }
 
   &__link {

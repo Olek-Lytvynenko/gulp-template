@@ -1,51 +1,65 @@
 .header {
   margin: 0 auto;
-  background-color: #e2e001;
+  background-color: $c-white;
   position: relative;
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 92px 0 50px ;
-
-    @include onDesktop {
-      padding: 52px 0 0;
-    }
-    @include onDesign {
-      padding: 75px 0 0;
-    }
   }
+
 
   &__top-action {
     display: flex;
     justify-content: space-between;
+    padding: 40px 0;
+  }
+
+  &__bottom-action {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 32px;
   }
 
-  &__icon--logo {
-    display: none;
+  &__top-action-item {
+    width: 32%;
+  }
 
-  @include onDesktop {
-    display: block;
+  &__top-action-text {
+    text-align: center;
+
+    @extend %fontMontserrat;
+    @include font(16px, 24px, 300);
   }
+
+  &__top-action-logo {
+    text-align: center;
+
+    @extend %fontMontserrat;
+    @include font(29px, 29px, 500, -0.58px);
   }
+
+  &__top-action-contact {
+    text-align: center;
+
+    @extend %fontMontserrat;
+    @include font(24px, 45px, 500, -0.58px);
+  }
+
+  // &__icon--logo {
+  //   display: none;
+  // }
 
   &__icon--menu {
     width: 52px;
     height: 100%;
-
-    @include onDesktop {
-      display: none;
-    }
-   }
-
-  &__nav {
-    &--display {
-      display: none;
-      @include onDesktop {
-        display: flex;
-      }
-    }
   }
+
+  // &__nav {
+  //   &--display {
+  //     display: none;
+  //   }
+  // }
 }
