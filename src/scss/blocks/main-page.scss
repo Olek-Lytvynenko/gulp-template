@@ -12,38 +12,12 @@
     text-align: center;
     text-transform: capitalize;
 
+    &::after{
+      content: "--------";
+    }
+
     @extend %fontMontserrat;;
-    @include font(32px, 36px, 900, 32px);
-  }
-
-  &__subtitle {
-    max-width: 358px;
-    margin-bottom: 52px;
-    margin-right: -5px;
-    text-align: center;
-
-    @extend %fontMontserrat;
-    @include font(20px, 32px, 500, 5px);
-
-    @include onTablet {
-      margin-bottom: 60px;
-      margin-right: -29px;
-      @include font(24px, 32px, 500, 29px);
-    }
-
-    @include onDesktop {
-      margin-bottom: 40px;
-
-    }
-  }
-
-  &__logo-wrapper {
-    width: 122px;
-    height: 60px;
-
-    @include onTablet {
-      display: none;
-    }
+    @include font(32px, 36px, 900);
   }
 }
 

@@ -11,18 +11,8 @@
 
   &__location {
     img {
-      height: 120px;
       width: 110px;
-      position: relative;
-
-      &::after {
-        content: "";
-        width: 102px;
-        height: 112px;
-
-        position: absolute;
-        background: url('../../img/footer-ellipse.svg');
-      }
+      aspect-ratio: 1;
     }
   }
 

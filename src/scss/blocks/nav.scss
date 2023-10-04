@@ -1,4 +1,5 @@
 .nav {
+  display: none;
   height: 100%;
   color: $c-dark;
 
@@ -15,30 +16,35 @@
     text-transform: capitalize;
     position: relative;
 
-    &:not(:last-child)::before {
-      content: "|";
-      position: absolute;
-      top: 0;
-      right: -15px;
-      color: #000;
-      opacity: 0.2;
-    }
-
-    &:hover {
-      &::after {
-        content: "__";
+    @include onTablet {
+      &:not(:last-child)::before {
+        content: "|";
         position: absolute;
-        height: 1px;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: transparent;
+        top: 0;
+        right: -15px;
+        color: #000;
+        opacity: 0.2;
+      }
+
+      &:hover {
+        &::after {
+          content: "__";
+          position: absolute;
+          height: 1px;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: transparent;
+        }
       }
     }
   }
 
   &__link {
     height: 100%;
-    position: relative;
+  }
+
+  @include onTablet {
+    display: block;
   }
 }

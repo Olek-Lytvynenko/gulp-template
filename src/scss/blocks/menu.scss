@@ -1,21 +1,22 @@
 .menu {
-  background-color: #e2e001;
-  overflow-y: auto;
+  background-color: $c-white;
   height: 100%;
+  max-width: 375px;
   overflow: hidden;
 
   &__content {
-    padding: 92px 0 138px;
+    padding: 50px 0;
   }
 
   &__top-action {
-    margin-bottom: 88px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
   }
 
   &__icon {
-    @include square(27px);
+    margin-right: 5px;
+    @include square(30px);
   }
 
   &__list {
@@ -23,16 +24,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 58px;
-    margin-bottom: 95px;
+    gap: 20px;
+    margin-bottom: 50px;
   }
 
   &__link {
     display: block;
     padding: 10px 0;
+
+    & span {
+      color: #000;
+      text-transform: capitalize;
+
+      @extend %fontMontserrat;
+      @include font(16px, 32px, 600);
+    }
   }
 
-  &__action {
+  &__bottom-action {
     display: flex;
     justify-content: center;
     color: $c-dark;
@@ -42,10 +51,6 @@
   }
 
   @include onTablet {
-    opacity: 0.94;
-  }
-  
-  @include onDesktop {
     display: none;
   }
 }

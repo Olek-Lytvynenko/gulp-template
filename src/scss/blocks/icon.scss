@@ -4,10 +4,10 @@
   background-size: contain;
 
   &--menu {
-    background-image: url('../../img/menu.svg');
+    background-image: url('@img/menu.svg');
   }
 
   &--cross {
-    background-image: url('../../img/cross.svg');
+    background-image: url('@img/cross.svg');
   }
 }
