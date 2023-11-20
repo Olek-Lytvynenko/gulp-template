@@ -119,7 +119,9 @@ function readFiles(filePaths) {
           reject(err);
           return;
         }
-        const searchData = data.match(/(?<=Lang:{2}t\(')(.*?)(?='\))/gm ||);
+        const searchData = data.match(
+          /(?<=Lang:{2}t\(')(.*?)(?='\))/gm || /(?<=Lang:{2}t\(')(.*?)(?='\))/gm
+        );
         const fileName = `/*${path.basename(filePath).replace(".php", "")}*/`;
 
         if (searchData) {
